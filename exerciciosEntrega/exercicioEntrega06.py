@@ -9,4 +9,24 @@
    # Entre 3 e 4 como "Cúmplice" e 5 como "Assassino". 
    # Caso contrário, ele será classificado como "Inocente".
 
+r1 = input("Telefonou para a vítima?: ").lower()
+r2 = input("Esteve no local do crime?: ").lower()
+r3 = input("Mora perto da vítima?: ").lower()
+r4 = input("Devia para a vítima?: ").lower()
+r5 = input("Já trabalhou com a vítima?: ").lower()
 
+lista = [r1, r2, r3, r4, r5]
+contadorSim = 0
+
+for i in lista:
+    if i == "sim":
+        contadorSim = contadorSim + 1
+
+if contadorSim == 2:
+    print("Suspeita")
+elif contadorSim > 2 and contadorSim < 5:
+    print("Cúmplice")
+elif contadorSim == 5:
+    print("Assassino")
+else:
+    print("Inocente")
