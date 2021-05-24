@@ -12,10 +12,12 @@ while True: # validação da senha
     senha = input('Digite sua senha: ')
     if senha != senhaValida: # se a senha for diferente...
         tentativas -= 1 # diminui uma tentativa restante
+
         print(f'Senha incorreta. Tentativas restantes {tentativas}')
         if tentativas == 0: # se o numero de tentativas restantes forem 0...
             print('\nAcesso negado. Número de tentativas excedido!\n')
-            sys.exit() # acesso negado, encerra o programa          
+            sys.exit() # acesso negado, encerra o programa         
+
     elif senha == senhaValida: # se as senhas forem iguais...
         system('cls') # limpa o prompt de comando
         print('\nVocê está logado')
@@ -42,12 +44,15 @@ while n > 10 or n < 1: # validação para ver se o número está entre 1 e 10
 while True:
     if n != numMaquina: # enquanto o número for diferente...
         palpites += 1 # some 1 a cada palpite
+
         if n < numMaquina: # se o número escolhido for menor
             print('Quase... um pouco mais!\n')
             n = int(input('Dê o seu palpite de 1 a 10: '))
+
         elif n > numMaquina: # se o número escolhido for maior
             print('Quase.. um pouco menos!\n')
             n = int(input('Dê o seu palpite de 1 a 10: '))
+            
     elif n == numMaquina: # se o usuário acertou o número escolhido
         palpites += 1 # some 1 ao palpite
         print(f'\n\nParabéns! Você acertou! Foram necessários {palpites} palpites.\n') # mostre a soma total dos palpites

@@ -5,7 +5,9 @@
    # Mostre na tela qual é o maior;
    # Verifique se o resultado da soma é par ou impar e mostre na tela;
    # Se a multiplicação entre eles for maior que 40, divida pelo resultado da divisão inteira e mostre o resultado na tela. Se não, mostre que a multiplicação não foi maior que 40.
+from os import system
 
+system('cls')
 n1 = int(input('Digite um numero: '))
 n2 = int(input('Digite outro número: '))
 
@@ -36,6 +38,6 @@ print(f'''
    A divisão inteira entre eles é: {n1//n2}
    O maior número é o {maior}
    O resultado da soma entre os números é: {resultadoSoma}
-   Multiplicação maior que 40: {resultadoMultip} ({n1*n2} / {n1//n2})
+   Multiplicação maior que 40: {resultadoMultip}
 ''')
 
