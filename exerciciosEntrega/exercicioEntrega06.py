@@ -7,11 +7,11 @@
 # O programa deve no final emitir uma classificação sobre a participação da pessoa no crime. 
    # Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita",
    # Entre 3 e 4 como "Cúmplice" e 5 como "Assassino". 
-   # Caso contrário, ele será classificado como "Inocente".
+   # Caso contrário, ele será classificado como "Inocente".  
 
 r1 = input("Telefonou para a vítima?: ").lower() # pergunta 1
-r2 = input("Esteve no local do crime?: ").lower() # pergunta 2
-r3 = input("Mora perto da vítima?: ").lower() # pergunta 3
+r2 = input("Esteve no local do crime?: ").lower() # pergunta 2  
+r3 = input("Mora perto da vítima?: ").lower() # pergunta 3  
 r4 = input("Devia para a vítima?: ").lower() # pergunta 4
 r5 = input("Já trabalhou com a vítima?: ").lower() # pergunta 5
 

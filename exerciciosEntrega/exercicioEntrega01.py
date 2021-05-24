@@ -17,7 +17,7 @@ if n1 > n2:
 else:
    maior = n2
 
-# verifica se o resultado da soma é par ou ímpar
+# verifica se o resultado da soma é par ou ímpar 
 if (n1 + n2) % 2 == 0:
    resultadoSoma = "Par"
 else:

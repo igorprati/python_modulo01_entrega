@@ -11,7 +11,7 @@ qntVogais = 0 #contador de vogais
 for i in frase: # i passa por toda a frase digitada, string por string
     if i in vogais: # caso o i esteja dentro da variavel vogal, ou seja, aeiou:
         qntVogais += 1 # soma 1 ao contador de vogais
-        frase = frase.replace(i, "") # i será trocado por espaço vazio, ou seja, ""
+        frase = frase.replace(i, "") # i será trocado por espaço vazio, ou seja, ""   
 
 system('cls') # limpa o terminal
 

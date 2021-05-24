@@ -8,7 +8,7 @@ def tirarVogais(frase): # função que vai tirar as vogais da frase
     for i in frase: 
         if i in vogais: # o "i" vai passar pela frase, e toda vez que encontrar uma vogal...
             qntVogais += 1 # vai adicionar 1 ao contador
-            frase = frase.replace(i, "") # vai trocar a vogal por vazio, ou seja, ""
+            frase = frase.replace(i, "") # vai trocar a vogal por vazio, ou seja, ""  
             
     print(f'Esta é a frase sem vogais: {frase}')
     print(f'Foram retiradas {qntVogais} vogais')

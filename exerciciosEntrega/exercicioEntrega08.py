@@ -10,7 +10,7 @@ dados['CTPS'] = int(input('Carteira de trabalho: ')) # chave 'CTPS' recebe carte
 if dados['CTPS'] != 0: # se a carteira de trabalho for diferente de ZERO:
     dados['anoContratacao'] = int(input('Ano de contratação: ')) # o programa vai pedir ano de contratação e adicionar à chave 'anoContratacao'
     dados['Salário'] = int(input('Salário: ')) # o programa vai pedir salario e adicionar à chave 'Salário'
-    aposentadoria = (dados['anoContratacao'] + 35) - 1998 # cria uma variável que recebe com quantos anos a pessoa vai se aposentar. Para isso, soma o ano de contratação + 35 anos de serviço - ano de nascimento
+    aposentadoria = (dados['anoContratacao'] + 35) - 1998 # cria uma variável que recebe com quantos anos a pessoa vai se aposentar. Para isso, soma o ano de contratação + 35 anos de serviço - ano de nascimento   
     print(f'Você irá se aposentar com {aposentadoria} anos.')
 else:
     print('Não sei quando você vai se aposentar...')

@@ -14,7 +14,7 @@ while True: # validação da senha
         tentativas -= 1 # diminui uma tentativa restante
 
         print(f'Senha incorreta. Tentativas restantes {tentativas}')
-        if tentativas == 0: # se o numero de tentativas restantes forem 0...
+        if tentativas == 0: # se o numero de tentativas restantes forem 0... 
             print('\nAcesso negado. Número de tentativas excedido!\n')
             sys.exit() # acesso negado, encerra o programa         
 
