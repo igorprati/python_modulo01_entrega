@@ -3,10 +3,21 @@
 import random as rd
 from os import system
 import sys
+import time
 
-senhaValida = 'senhasenha'
 senha = ''
 tentativas = 4
+
+while True: 
+    senhaValida = input('Crie sua senha: ')
+    confirmarSenha = input('Confirme sua senha: ')
+    if confirmarSenha != senhaValida:
+        print('As senhas não conferem. Tente novamente!')
+    else:
+        print('Senha cadastrada!')
+        break
+time.sleep(2)
+system('cls')
 
 while True: # validação da senha
     senha = input('Digite sua senha: ')
